@@ -1,0 +1,12 @@
+<h1>Sonuçlar</h1>
+
+<a href="/">Geri dön</a>
+<ul>
+    <% data["results"].forEach(function(film){ %>
+    <li>
+        Film adı: <strong> <%= film.title %> </strong>
+        Puan: <%= film.vote_average %><br />
+        <img src="http://image.tmdb.org/t/p/w185<%= film.poster_path %>" />
+    </li>
+    <%});%>
+</ul>
